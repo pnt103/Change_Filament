@@ -1,30 +1,30 @@
 ---
 layout: plugin
 
-id: Change_Filament
-title: Change_Filament
+id: Filament_Change
+title: Filament_Change
 description: Facilitates changing filament (backs out old, loads new)
 author: Pete Turnbull
 license: bsd-3-clause
 
 date: 2023-10-06
 
-homepage: https://github.com/pnt103/Change_Filament
-source: https://github.com/pnt103/Change_Filament
-archive: https://github.com/pnt103/Change_Filament/archive/master.zip
+homepage: https://github.com/pnt103/Filament_Change
+source: https://github.com/pnt103/Filament_Change
+archive: https://github.com/pnt103/Filament_Change/archive/master.zip
 
 tags:
 - filament
 
 screenshots:
-- url: /assets/img/plugins/Change_Filament/cf_buttons.png
-  alt: Change Filament Buttons
-  caption: Change Filament Buttons
-- url: /assets/img/plugins/Change_Filament/cf_settings.png
-  alt: Change Filament Settings
-  caption: Change Filament Settings
+- url: /assets/img/plugins/Filament_Change/cf_buttons.png
+  alt: Filament Change Buttons
+  caption: Filament Change Buttons
+- url: /assets/img/plugins/Filament_Change/cf_settings.png
+  alt: Filament Change Settings
+  caption: Filament Change Settings
 
-featuredimage: /assets/img/plugins/Change_Filament/cf_buttons.png
+featuredimage: /assets/img/plugins/Filament_Change/cf_buttons.png
 
 ---
 
@@ -34,7 +34,7 @@ The plugin mimics the actions taken by the change filament action built into
 Marlin. That feature is not available on all printers and also requires using
 the control box to use, instead of doing everything in OctoPrint.
 
-When Marlin unloads filament using the Advanced Pause feature, it first retracts
+When Marlin unloads filament using the Advanced Pause (M600) feature, it first retracts
 and then pauses to cool the filament slightly, then de-retracts a little less
 before it unloads the filament. This is to help prevent pulling a string away 
 from inside the nozzle and leaving it in the heatbreak or on the end of the
