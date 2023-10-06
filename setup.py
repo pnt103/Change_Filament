@@ -1,11 +1,11 @@
-plugin_identifier = "Change_Filament"
-plugin_package = "octoprint_Change_Filament"
-plugin_name = "Change_Filament"
-plugin_version = "0.4.0"
+plugin_identifier = "Filament_Change"
+plugin_package = "octoprint_Filament_Change"
+plugin_name = "Filament_Change"
+plugin_version = "0.1.0"
 plugin_description = """Facilitates changing filament (unloads old, loads new, etc)"""
 plugin_author = "Pete Turnbull"
 plugin_author_email = "pete@dunnington.cx"
-plugin_url = "https://github.com/pnt103/Change_Filament"
+plugin_url = "https://github.com/pnt103/Filament_Change"
 # forked from https://github.com/jim-p/Change_Filament, V0.3.2
 plugin_license = "bsd-3-clause"
 plugin_requires = []
