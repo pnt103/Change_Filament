@@ -1,6 +1,6 @@
 plugin_identifier = "Filament_Change"
-#plugin_package = "octoprint_Filament_Change"
-plugin_package = "Filament_Change"
+plugin_package = "octoprint_Filament_Change"
+#plugin_package = "Filament_Change"
 plugin_name = "Filament_Change"
 plugin_version = "0.1.0"
 plugin_description = """Facilitates changing filament (unloads old, loads new, etc)"""
