@@ -1,4 +1,4 @@
-.changefilament-park::before {
+.filamentchange-park::before {
     content: "\f00c";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -7,7 +7,7 @@
     vertical-align: middle;
 }
 
-.changefilament-unload::before {
+.filamentchange-unload::before {
     content: "\f049";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -16,7 +16,7 @@
     vertical-align: middle;
 }
 
-.changefilament-load::before {
+.filamentchange-load::before {
     content: "\f051";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -25,7 +25,7 @@
     vertical-align: middle;
 }
 
-.changefilament-purge::before {
+.filamentchange-purge::before {
     content: "\f13a";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -34,7 +34,7 @@
     vertical-align: middle;
 }
 
-.changefilament-m600::before {
+.filamentchange-m600::before {
     content: "\f021";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
