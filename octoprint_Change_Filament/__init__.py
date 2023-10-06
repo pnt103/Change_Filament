@@ -1,5 +1,5 @@
 #
-# OctoPrint Change_Filament plugin.
+# OctoPrint Filament_Change plugin.
 #
 # Copyright (c) 2023, Pete Turnbull <pete@dunnington.cx>
 # Original Copyright (c) 2019, Jim Pingle <jim@pingle.org>
@@ -34,7 +34,7 @@ from __future__ import absolute_import
 
 import octoprint.plugin
 
-class Change_filamentPlugin(octoprint.plugin.SettingsPlugin,
+class Filament_changePlugin(octoprint.plugin.SettingsPlugin,
 				octoprint.plugin.AssetPlugin,
 				octoprint.plugin.TemplatePlugin):
 
@@ -60,34 +60,34 @@ class Change_filamentPlugin(octoprint.plugin.SettingsPlugin,
 
 	def get_assets(self):
 		return dict(
-			js=["js/Change_Filament.js"],
-			css=["css/Change_Filament.css"]
+			js=["js/Filament_Change.js"],
+			css=["css/Filament_Change.css"]
 		)
 
 	def get_update_information(self):
 		return dict(
-			Change_Filament=dict(
-				displayName="Change Filament Plugin",
+			Filament_Change=dict(
+				displayName="Filament Change Plugin",
 				displayVersion=self._plugin_version,
 
 				# version check: github repository
 				type="github_release",
 				user="pnt103",
-				repo="Change_Filament",
+				repo="Filament_Change",
 				current=self._plugin_version,
 
 				# update method: pip
-				pip="https://github.com/jim-p/Change_Filament/archive/{target_version}.zip"
+				pip="https://github.com/pnt103/Filament_Change/archive/{target_version}.zip"
 			)
 		)
 
 
-__plugin_name__ = "Change Filament Plugin"
+__plugin_name__ = "Filament Change Plugin"
 __plugin_pythoncompat__ = ">=2.7,<4"
 
 def __plugin_load__():
 	global __plugin_implementation__
-	__plugin_implementation__ = Change_filamentPlugin()
+	__plugin_implementation__ = Filament_changePlugin()
 
 	global __plugin_hooks__
 	__plugin_hooks__ = {
