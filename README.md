@@ -38,8 +38,8 @@ The M600 button can trigger the built-in Change Filament function on certain bui
 
 M600 in Marlin, and the associated M702 command, perform a fairly large retraction
 followed by a short pause to cool the filament slightly and then a de-retraction to compress it,
-to improve unloading, before withdrawing the filament the rest of the way.  
-Not implemented in the "Unload" command here yet.
+to improve unloading, before withdrawing the filament the rest of the way.  Not implemented in
+the "Unload" command here yet.
 
 ## Configuration
 
