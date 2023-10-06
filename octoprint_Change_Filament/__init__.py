@@ -1,7 +1,8 @@
 #
 # OctoPrint Change_Filament plugin.
 #
-# Copyright (c) 2019, Jim Pingle <jim@pingle.org>
+# Copyright (c) 2023, Pete Turnbull <pete@dunnington.cx>
+# Original Copyright (c) 2019, Jim Pingle <jim@pingle.org>
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -43,6 +44,8 @@ class Change_filamentPlugin(octoprint.plugin.SettingsPlugin,
 			unload_speed=1600,
 			load_length=50,
 			load_speed=60,
+			purge_length=25,
+			purge_speed=40,
 			pause_before_park=False,
 			retract_before_park=False,
 			home_before_park=False,
@@ -69,7 +72,7 @@ class Change_filamentPlugin(octoprint.plugin.SettingsPlugin,
 
 				# version check: github repository
 				type="github_release",
-				user="jim-p",
+				user="pnt103",
 				repo="Change_Filament",
 				current=self._plugin_version,
 
