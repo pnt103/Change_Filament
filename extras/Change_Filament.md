@@ -34,6 +34,12 @@ The plugin mimics the actions taken by the change filament action built into
 Marlin. That feature is not available on all printers and also requires using
 the control box to use, instead of doing everything in OctoPrint.
 
+When Marlin unloads filament using the Advanced Pause feature, it first retracts
+and then pauses to cool the filament slightly, then de-retracts a little less
+before it unloads the filament. This is to help prevent pulling a string away 
+from inside the nozzle and leaving it in the heatbreak or on the end of the
+filament which would make it more difficult to re-load.
+
 Configuration:
 
 * **Unload Length**: Length of filament to reverse extrude when unloading, in mm.
