@@ -87,11 +87,18 @@ $(function() {
 						],
 						'customClass': 'btn', 'additionalClasses': 'changefilament-load', 'name': ' Load'},
 					{'commands': [
+						'M117 Purging filament',
+						'M83',
+						'G1 E' + settings.purge_length() + ' F' + settings.purge_speed(),
+						'M117'
+						],
+						'customClass': 'btn', 'additionalClasses': 'changefilament-purge', 'name': ' Purge'},
+					{'commands': [
 						'M600'
 						],
 						'customClass': 'btn', 'additionalClasses': ' btn-danger changefilament-m600', 'name': ' M600'},
 					{'output': 'WARNING: Preheat first! Refresh page after changing settings.'},
-					{'output': 'M600 requires special support in Marlin and must be completed using the control box.'}
+					/* {'output': 'M600 requires special support in Marlin and must be completed using the control box.'} */
 				]
 			}];
 
