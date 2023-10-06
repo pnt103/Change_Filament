@@ -1,7 +1,7 @@
 /*
- * OctoPrint Change_Filament plugin.
+ * OctoPrint Filament_Change plugin.
  *
- * Copyright (c) 2019, Jim Pingle <jim@pingle.org>
+ * Copyright 2023, Pete Turnbull <pete@dunnington.cx>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -30,14 +30,14 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 $(function() {
-	function Change_filamentViewModel(parameters) {
+	function Filament_changeViewModel(parameters) {
 		var self = this;
 
 		self.settings = parameters[0];
 		self.controlViewModel = parameters[1];
 
 		self.getAdditionalControls = function() {
-			var settings = self.settings.settings.plugins.Change_Filament;
+			var settings = self.settings.settings.plugins.Filament_Change;
 
 			var preparkpause = '';
 			if (settings.pause_before_park() != false) {
@@ -57,7 +57,7 @@ $(function() {
 			}
 
 			return [{
-				'customClass': '', 'layout': 'horizontal', 'name': 'Change Filament', 'children':[
+				'customClass': '', 'layout': 'horizontal', 'name': 'Filament Change', 'children':[
 					{'commands': [
 						'M117 Parking nozzle',
 						preparkpause,
@@ -70,7 +70,7 @@ $(function() {
 						'G0 Y' + settings.y_park() + ' X' + settings.x_park() + ' F' + settings.park_speed(),
 						'M117 Nozzle parked'
 						],
-						'customClass': 'btn', 'additionalClasses': 'changefilament-park', 'name': ' Park'},
+						'customClass': 'btn', 'additionalClasses': 'filamentchange-park', 'name': ' Park'},
 					{'commands': [
 						'M117 Unloading filament',
 						'M83',
@@ -78,25 +78,25 @@ $(function() {
 						'M18 E',
 						'M117 Replace filament, set new temp, click Load'
 						],
-						'customClass': 'btn', 'additionalClasses': 'changefilament-unload', 'name': ' Unload'},
+						'customClass': 'btn', 'additionalClasses': 'filamentchange-unload', 'name': ' Unload'},
 					{'commands': [
 						'M117 Loading filament',
 						'M83',
 						'G1 E' + settings.load_length() + ' F' + settings.load_speed(),
 						'M117 New Filament Loaded'
 						],
-						'customClass': 'btn', 'additionalClasses': 'changefilament-load', 'name': ' Load'},
+						'customClass': 'btn', 'additionalClasses': 'filamentchange-load', 'name': ' Load'},
 					{'commands': [
 						'M117 Purging filament',
 						'M83',
 						'G1 E' + settings.purge_length() + ' F' + settings.purge_speed(),
 						'M117'
 						],
-						'customClass': 'btn', 'additionalClasses': 'changefilament-purge', 'name': ' Purge'},
+						'customClass': 'btn', 'additionalClasses': 'filamentchange-purge', 'name': ' Purge'},
 					{'commands': [
 						'M600'
 						],
-						'customClass': 'btn', 'additionalClasses': ' btn-danger changefilament-m600', 'name': ' M600'},
+						'customClass': 'btn', 'additionalClasses': ' btn-danger filamentchange-m600', 'name': ' M600'},
 					{'output': 'WARNING: Preheat first! Refresh page after changing settings.'},
 					/* {'output': 'M600 requires special support in Marlin and must be completed using the control box.'} */
 				]
@@ -107,7 +107,7 @@ $(function() {
 	}
 
 	OCTOPRINT_VIEWMODELS.push({
-		construct: Change_filamentViewModel,
+		construct: Filament_changeViewModel,
 		dependencies: [ "settingsViewModel", "controlViewModel" ]
 	});
 });
