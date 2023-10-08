@@ -82,7 +82,7 @@ class Filament_changePlugin(octoprint.plugin.SettingsPlugin,
 		)
 
 
-__plugin_name__ = "Filament Change Plugin"
+__plugin_name__ = "Filament Change"
 __plugin_pythoncompat__ = ">=2.7,<4"
 
 def __plugin_load__():
