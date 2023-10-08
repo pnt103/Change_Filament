@@ -67,7 +67,7 @@ class Filament_changePlugin(octoprint.plugin.SettingsPlugin,
 	def get_update_information(self):
 		return dict(
 			Filament_Change=dict(
-				displayName="Filament Change Plugin",
+				displayName="Filament Change",
 				displayVersion=self._plugin_version,
 
 				# version check: github repository
