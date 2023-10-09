@@ -17,7 +17,7 @@
 }
 
 .filamentchange-load::before {
-    content: "\f051";
+    content: "\f050";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     display: inline-block;
@@ -26,7 +26,7 @@
 }
 
 .filamentchange-purge::before {
-    content: "\f13a";
+    content: "\f051";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     display: inline-block;
