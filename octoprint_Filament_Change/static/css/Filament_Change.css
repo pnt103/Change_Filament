@@ -32,7 +32,17 @@
     display: inline-block;
     padding-right: 6px;
     vertical-align: middle;
-    transform: rotateY(90deg);
+    transform: rotate(90deg);
+}
+
+.filamentchange-retract::before {
+    content: "\f051";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    padding-right: 6px;
+    vertical-align: middle;
+    transform: rotate(270deg);
 }
 
 .filamentchange-m600::before {

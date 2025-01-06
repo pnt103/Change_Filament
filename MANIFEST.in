@@ -2,3 +2,5 @@ include README.md
 recursive-include octoprint_Filament_Change/templates *
 recursive-include octoprint_Filament_Change/translations *
 recursive-include octoprint_Filament_Change/static *
+recursive-include octoprint_Filament_Change/extras *
+recursive-include screenshots *

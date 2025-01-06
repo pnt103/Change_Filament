@@ -40,19 +40,21 @@ class Filament_changePlugin(octoprint.plugin.SettingsPlugin,
 
 	def get_settings_defaults(self):
 		return dict(
-			unload_length=500,
+			unload_length=450,
 			unload_speed=1600,
-			load_length=50,
-			load_speed=60,
+			load_length=420,
+			load_speed=800,
 			purge_length=25,
-			purge_speed=40,
+			purge_speed=240,
 			pause_before_park=False,
-			retract_before_park=False,
+			retract_before_park=True,
+			retract_length=5,
+			retract_speed=240,
 			home_before_park=False,
 			y_park=0,
 			x_park=0,
-			z_lift_relative=30,
-			park_speed=5000
+			z_lift_relative=20,
+			park_speed=4200
 		)
 
 	def get_template_configs(self):

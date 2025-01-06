@@ -1,14 +1,39 @@
+# The plugin's identifier, has to be unique
 plugin_identifier = "Filament_Change"
-plugin_package = "octoprint_Change_Filament"
-#plugin_package = "Filament_Change"
-plugin_name = "Filament_Change"
-plugin_version = "0.1.2"
+
+# The plugin's python package, should be "octoprint_<plugin identifier>",
+# has to be unique
+plugin_package = "octoprint_Filament_Change"
+
+# The plugin's human readable name. Can be overwritten within OctoPrint's
+# internal data via __plugin_name__ in the plugin module
+plugin_name = "Filament Change"
+
+# The plugin's version. Can be overwritten within OctoPrint's internal data
+# via __plugin_version__ in the plugin module
+plugin_version = "0.1.3"
+
+# The plugin's description. Can be overwritten within OctoPrint's internal 
+# data via __plugin_description__ in the plugin module
 plugin_description = """Facilitates changing filament (unloads old, loads new, etc)"""
+
+# The plugin's author. Can be overwritten within OctoPrint's internal data
+# via __plugin_author__ in the plugin module
 plugin_author = "Pete Turnbull"
+
+# The plugin's author's email address.
 plugin_author_email = "pete@dunnington.cx"
+
+# The plugin's homepage URL. Can be overwritten within OctoPrint's internal
+# data via __plugin_url__ in the plugin module
 plugin_url = "https://github.com/pnt103/Filament_Change"
 # forked from https://github.com/jim-p/Change_Filament, V0.3.2
+
+# The plugin's license. Can be overwritten within OctoPrint's internal data
+# via __plugin_license__ in the plugin module
 plugin_license = "bsd-3-clause"
+
+# Any additional requirements besides OctoPrint should be listed here
 plugin_requires = []
 
 ### --------------------------------------------------------------------------------------------------------------------

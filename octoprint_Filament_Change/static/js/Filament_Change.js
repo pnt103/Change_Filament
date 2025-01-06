@@ -94,6 +94,13 @@ $(function() {
 						],
 						'customClass': 'btn', 'additionalClasses': 'filamentchange-purge', 'name': ' Purge'},
 					{'commands': [
+						'M117 Retracting filament',
+						'M83',
+						'G1 E' + settings.retract_length() + ' F' + settings.retract_speed(),
+						'M117'
+						],
+						'customClass': 'btn', 'additionalClasses': 'filamentchange-retract', 'name': ' Retract'},
+					{'commands': [
 						'M600'
 						],
 						/* 'customClass': 'btn', 'additionalClasses': ' btn-danger filamentchange-m600', 'name': ' M600'}, */
