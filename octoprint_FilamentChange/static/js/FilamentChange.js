@@ -30,7 +30,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 $(function() {
-	function Filament_changeViewModel(parameters) {
+	function filamentchangeViewModel(parameters) {
 		var self = this;
 
 		self.settings = parameters[0];
@@ -96,7 +96,7 @@ $(function() {
 					{'commands': [
 						'M117 Retracting filament',
 						'M83',
-						'G1 E' + settings.retract_length() + ' F' + settings.retract_speed(),
+						'G1 E-' + settings.retract_length() + ' F' + settings.retract_speed(),
 						'M117'
 						],
 						'customClass': 'btn', 'additionalClasses': 'filamentchange-retract', 'name': ' Retract'},

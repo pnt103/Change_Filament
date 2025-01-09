@@ -1,7 +1,7 @@
 #
 # OctoPrint Filament_Change plugin.
 #
-# Copyright (c) 2023, Pete Turnbull <pete@dunnington.cx>
+# Copyright (c) 2023,2025 Pete Turnbull <pete@dunnington.cx>
 # Original Copyright (c) 2019, Jim Pingle <jim@pingle.org>
 # All rights reserved.
 #
@@ -34,7 +34,7 @@ from __future__ import absolute_import
 
 import octoprint.plugin
 
-class Filament_changePlugin(octoprint.plugin.SettingsPlugin,
+class filamentchangePlugin(octoprint.plugin.SettingsPlugin,
 				octoprint.plugin.AssetPlugin,
 				octoprint.plugin.TemplatePlugin):
 
@@ -62,8 +62,8 @@ class Filament_changePlugin(octoprint.plugin.SettingsPlugin,
 
 	def get_assets(self):
 		return dict(
-			js=["js/Filament_Change.js"],
-			css=["css/Filament_Change.css"]
+			js=["js/FilamentChange.js"],
+			css=["css/FilamentChange.css"]
 		)
 
 	def get_update_information(self):
@@ -75,11 +75,11 @@ class Filament_changePlugin(octoprint.plugin.SettingsPlugin,
 				# version check: github repository
 				type="github_release",
 				user="pnt103",
-				repo="Filament_Change",
+				repo="OctoPrint-FilamentChange",
 				current=self._plugin_version,
 
 				# update method: pip
-				pip="https://github.com/pnt103/Filament_Change/archive/{target_version}.zip"
+				pip="https://github.com/pnt103/OctoPrint-FilamentChange/archive/{target_version}.zip"
 			)
 		)
 
@@ -89,7 +89,7 @@ __plugin_pythoncompat__ = ">=2.7,<4"
 
 def __plugin_load__():
 	global __plugin_implementation__
-	__plugin_implementation__ = Filament_changePlugin()
+	__plugin_implementation__ = filamentchangePlugin()
 
 	global __plugin_hooks__
 	__plugin_hooks__ = {

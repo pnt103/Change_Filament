@@ -1,9 +1,9 @@
 # OctoPrint-Filament_Change
 
-This plugin makes it simpler to change filament.
+This plugin makes it simpler to change filament without special support from Marlin.
 
-The plugin can mimic the several of the actions available from the
-optional `Advanced Pause`
+The plugin mimics several of the actions available from the optional
+`Advanced Pause`
 feature built into advanced versions of Marlin.  
 These `Park`, `Unload`, `Load`, `Purge` and `Retract` commands are executed
 locally, and do not require special support in Marlin.
@@ -11,7 +11,7 @@ locally, and do not require special support in Marlin.
 Marlin's `Advanced Pause` feature provides the `M600 Filament Change` command
 and the associated
 `M701 Load Filament` and `M702 Unload Filament` commands
-but is an *optional* feature in Marlin, and not available on all printers.
+but is an *optional* feature, and not available on all printers.
 Moreover, those commands normally require using the printer's display control
 to use, instead of doing everything in OctoPrint.
 
@@ -32,7 +32,7 @@ actions instead..
 
 Install manually using this URL:
 
-    https://github.com/pnt103/OctoPrint-Filament_Change/archive/master.zip
+    https://github.com/pnt103/OctoPrint-FilamentChange/archive/master.zip
 
 ## Use
 

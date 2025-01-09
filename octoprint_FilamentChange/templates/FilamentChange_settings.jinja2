@@ -42,7 +42,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <label class="control-label">{{ _('Unload Length') }}:</label>
     <div class="controls">
       <div class="input-append">
-        <input type="number" step="0.1" data-bind="value: settings.plugins.Filament_Change.unload_length">
+        <input type="number" step="1.0" data-bind="value: settings.plugins.Filament_Change.unload_length">
         <span class="add-on">mm</span>
       </div>
       <span class="help-block">{{ _('Length of filament to withdraw when unloading.') }}</span>
@@ -52,7 +52,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <label class="control-label">{{ _('Unload Speed') }}:</label>
     <div class="controls">
       <div class="input-append">
-        <input type="number" step="0.1" data-bind="value: settings.plugins.Filament_Change.unload_speed">
+        <input type="number" step="10.0" data-bind="value: settings.plugins.Filament_Change.unload_speed">
         <span class="add-on">mm/m</span>
       </div>
       <span class="help-block">{{ _('How fast to unload the filament.') }}</span>
@@ -62,7 +62,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <label class="control-label">{{ _('Load Length') }}:</label>
     <div class="controls">
       <div class="input-append">
-        <input type="number" step="0.1" data-bind="value: settings.plugins.Filament_Change.load_length">
+        <input type="number" step="1.0" data-bind="value: settings.plugins.Filament_Change.load_length">
         <span class="add-on">mm</span>
       </div>
       <span class="help-block">{{ _('Length of filament to extrude when loading.') }}</span>
@@ -72,7 +72,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <label class="control-label">{{ _('Load Speed') }}:</label>
     <div class="controls">
       <div class="input-append">
-        <input type="number" step="0.1" data-bind="value: settings.plugins.Filament_Change.load_speed">
+        <input type="number" step="10.0" data-bind="value: settings.plugins.Filament_Change.load_speed">
         <span class="add-on">mm/m</span>
       </div>
       <span class="help-block">{{ _('How fast to extrude when loading filament.') }}</span>
@@ -92,7 +92,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <label class="control-label">{{ _('Purge Speed') }}:</label>
     <div class="controls">
       <div class="input-append">
-        <input type="number" step="0.1" data-bind="value: settings.plugins.Filament_Change.purge_speed">
+        <input type="number" step="10.0" data-bind="value: settings.plugins.Filament_Change.purge_speed">
         <span class="add-on">mm/m</span>
       </div>
       <span class="help-block">{{ _('How fast to purge/reprime.') }}</span>
@@ -113,7 +113,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <label class="control-label">{{ _('Retract Speed') }}:</label>
     <div class="controls">
       <div class="input-append">
-        <input type="number" step="0.1" data-bind="value: settings.plugins.Filament_Change.retract_speed">
+        <input type="number" step="10.0" data-bind="value: settings.plugins.Filament_Change.retract_speed">
         <span class="add-on">mm/m</span>
       </div>
       <span class="help-block">{{ _('How fast to retract.') }}</span>
@@ -152,7 +152,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <label class="control-label">{{ _('Y Park') }}:</label>
     <div class="controls">
       <div class="input-append">
-        <input type="number" step="0.1" data-bind="value: settings.plugins.Filament_Change.y_park">
+        <input type="number" step="1.0" data-bind="value: settings.plugins.Filament_Change.y_park">
         <span class="add-on">mm</span>
       </div>
       <span class="help-block">{{ _('Position on the Y axis where the head will be moved when loading or unloading.') }}</span>
@@ -162,7 +162,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <label class="control-label">{{ _('X Park') }}:</label>
     <div class="controls">
       <div class="input-append">
-        <input type="number" step="0.1" data-bind="value: settings.plugins.Filament_Change.x_park">
+        <input type="number" step="1.0" data-bind="value: settings.plugins.Filament_Change.x_park">
         <span class="add-on">mm</span>
       </div>
       <span class="help-block">{{ _('Position on the X axis where the head will be moved when loading or unloading. Depending on the filament path, may be best set to the midpoint of the X axis.') }}</span>
@@ -172,7 +172,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <label class="control-label">{{ _('Z Lift Relative') }}:</label>
     <div class="controls">
       <div class="input-append">
-        <input type="number" step="0.1" data-bind="value: settings.plugins.Filament_Change.z_lift_relative">
+        <input type="number" step="1.0" data-bind="value: settings.plugins.Filament_Change.z_lift_relative">
         <span class="add-on">mm</span>
       </div>
       <span class="help-block">{{ _('How high to move the Z axis before unloading.') }}</span>
@@ -182,7 +182,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <label class="control-label">{{ _('Park Speed') }}:</label>
     <div class="controls">
       <div class="input-append">
-        <input type="number" step="0.1" data-bind="value: settings.plugins.Filament_Change.park_speed">
+        <input type="number" step="10.0" data-bind="value: settings.plugins.Filament_Change.park_speed">
         <span class="add-on">mm/m</span>
       </div>
       <span class="help-block">{{ _('How fast to move the head when parking.') }}</span>
