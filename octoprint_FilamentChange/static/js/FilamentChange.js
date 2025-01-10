@@ -37,7 +37,7 @@ $(function() {
 		self.controlViewModel = parameters[1];
 
 		self.getAdditionalControls = function() {
-			var settings = self.settings.settings.plugins.Filament_Change;
+			var settings = self.settings.settings.plugins.FilamentChange;
 
 			var preparkpause = '';
 			if (settings.pause_before_park() != false) {
@@ -115,7 +115,7 @@ $(function() {
 	}
 
 	OCTOPRINT_VIEWMODELS.push({
-		construct: Filament_changeViewModel,
+		construct: filamentchangeViewModel,
 		dependencies: [ "settingsViewModel", "controlViewModel" ]
 	});
 });
